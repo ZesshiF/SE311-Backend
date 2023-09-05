@@ -89,6 +89,7 @@ public class EventDaolmpl implements EventDao {
 
     @Override
     public Integer getEventSize(){
+
         return eventList.size();
     }
 
@@ -104,4 +105,5 @@ public class EventDaolmpl implements EventDao {
     public  Event getEvent (Long id) {
         return eventList.stream().filter(event -> event.getId().equals(id)).findFirst().orElse(null);
     }
+
 }

@@ -8,5 +8,5 @@ import lombok.Data;
 public class Organizer {
     Long id;
     String organizer;
-    String address;
+    String location;
 }

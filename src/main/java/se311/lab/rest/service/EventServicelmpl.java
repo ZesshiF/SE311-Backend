@@ -15,16 +15,19 @@ public class EventServicelmpl implements EventService {
 
     @Override
     public Integer getEventSize(){
-        return eventDao.getEventSize();
+        return
+                eventDao.getEventSize();
     }
 
     @Override
     public List<Event> getEvents(Integer pageSize, Integer page){
+
         return eventDao.getEvents(pageSize,page);
     }
 
     @Override
     public  Event getEvent(Long id){
+
         return  eventDao.getEvent(id);
     }
 }
