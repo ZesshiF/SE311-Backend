@@ -31,6 +31,11 @@ public class EventServicelmpl implements EventService {
 
         return  eventDao.getEvent(id);
     }
+
+    @Override
+    public Event save(Event event) {
+        return eventDao.save(event);
+    }
 }
 
 
